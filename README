@@ -1,0 +1,24 @@
+NetflixCatalog
+==============
+
+This is a very simple plugin that will pull back info about a catalog item (i.e. a film) from Netflix.
+
+A lot of the code comes from flix4r. I just updated it to have more film info and make actors (and directors) objects, not just strings.
+
+
+Example
+=======
+
+./script/plugin install 
+
+should create a netflix_credentials.yml in your config that you need to fill out with your key and secret (available from netflix at 
+http://developers.netflix.com)
+
+Call:
+
+list = NetFlix::Title.search(:term => 'the spirit', :max_results => 2)
+
+
+
+Copyright (c) 2009 [Phil Smy], released under the MIT license
+heavily stolen from flix4r... sorry
