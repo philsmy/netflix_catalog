@@ -16,10 +16,8 @@ class PeopleBuilder
       cast_link_node = movie.search('link[@rel="http://schemas.netflix.com/catalog/people.cast"]').first
       cast_link = cast_link_node['href'] if cast_link_node
     when :directors
-      puts "looking for directors"
       cast_link_node = movie.search('link[@rel="http://schemas.netflix.com/catalog/people.directors"]').first
       cast_link = cast_link_node['href'] if cast_link_node
-      puts cast_link
     end
     if cast_link.nil?
       []

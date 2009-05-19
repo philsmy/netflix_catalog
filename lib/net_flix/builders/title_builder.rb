@@ -16,7 +16,6 @@ class TitleBuilder
   end
 
   def initialize(data)
-    puts data
     @data = data
     @title = NetFlix::Title.new
 

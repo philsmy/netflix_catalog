@@ -11,7 +11,7 @@ module NetFlix
     end
 
     def log(message)
-      puts "[#{Time.now.to_i}] #{message}"
+      logger.debug "[#{Time.now.to_i}] #{message}"
     end  
   end # class methods
 end
